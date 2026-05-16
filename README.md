@@ -24,11 +24,29 @@ For this set up, the backlight is actually also used as a frontlight. The SK6812
 
 ## Troubleshooting
 
+### No key input over USB-C
+For this split build, plug USB-C into the left half running `corne_left`. The
+right half running `corne_right` is the peripheral side and may not show up as a
+USB keyboard on its own.
+
+If USB still does not type:
+
+1. Flash `settings_reset` to both halves.
+2. Flash `corne_left` to the left half and `corne_right` to the right half.
+3. Plug USB-C into the left half.
+4. Hold `mo 2 + mo 1`, then press the `OUT_USB` binding on Adjust.
+
 ### OLED remains blank after EP_OFF
-Mapping for EP_ON & EP_OFF in case of OLED issue on ZMK
+ZMK displays can stay blank after external power is cut. The external power
+state is stored in flash, so it can remain off even after reflashing firmware.
+
+The Adjust layer includes these recovery bindings:
 ```
-&ext_power EP_ON
-&ext_power EP_OFF
+Hold mo 2 + mo 1, then press top-right key:    &ext_power EP_ON
+Hold mo 2 + mo 1, then press middle-left key:  &ext_power EP_OFF
+Hold mo 2 + mo 1, then press middle-right key: &ext_power EP_TOG
 ```
 
-Then flash the firmware, click `EP_OFF` and `EP_ON` on the keyboard, then click `Reset` on the keyboard. The OLED should be back to normal. If not, try to flash the firmware again.
+Flash the firmware, press the `EP_ON` binding, wait a few seconds, then reset
+the keyboard. If the OLED is still blank, flash `settings_reset` to both halves,
+then flash `corne_left` and `corne_right` again.
