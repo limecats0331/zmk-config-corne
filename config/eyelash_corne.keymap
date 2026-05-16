@@ -40,10 +40,10 @@
         esc_tab: esc_tab {
             compatible = "zmk,behavior-hold-tap";
             display-name = "Esc/Tab";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&kp TAB>, <&kp ESC>;
+            bindings = <&kp>, <&kp>;
         };
 
         td0: td0 {
@@ -83,7 +83,7 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&esc_tab    &kp Q  &kp W  &kp E     &kp R     &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&esc_tab TAB ESC  &kp Q  &kp W  &kp E     &kp R     &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL   &kp A  &kp S  &kp D     &kp F     &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT      &kp Z  &kp X  &kp C     &kp V     &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                              &kp LALT  &kp LGUI  &kp SPACE                                               &kp RET       &mo 1  &mo 2
