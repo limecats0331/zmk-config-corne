@@ -47,8 +47,8 @@ layers:
   - LGUI
   - SPACE
   - RET
-  - Raise
   - Lower
+  - Raise
   Lower:
   - {t: ▽, type: trans}
   - '1'
@@ -96,8 +96,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   Raise:
   - F1
   - F2
@@ -145,8 +145,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   Adjust:
   - BT CLR ALL
   - {t: BT, h: '0'}
