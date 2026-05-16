@@ -2,12 +2,18 @@
 include:
   - board: eyelash_corne_right
     shield: nice_view
+    artifact-name: c_black_niceview_right
   - board: eyelash_corne_left
     shield: nice_view
+    artifact-name: c_black_niceview_left
   - board: eyelash_corne_left
     shield: nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    artifact-name: eyelash_corne_studio_left
-  - board: nice_nano_v2
+    artifact-name: c_black_niceview_studio_left
+  - board: eyelash_corne_left
     shield: settings_reset
+    artifact-name: c_black_reset_left
+  - board: eyelash_corne_right
+    shield: settings_reset
+    artifact-name: c_black_reset_right
