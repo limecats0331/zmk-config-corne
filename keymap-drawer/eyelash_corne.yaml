@@ -1,0 +1,201 @@
+layout: {zmk_keyboard: eyelash_corne}
+layers:
+  QWERTY:
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - UP
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - '&td0'
+  - A
+  - S
+  - D
+  - F
+  - G
+  - LEFT
+  - ENTER
+  - RIGHT
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - SPACE
+  - DOWN
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - LGUI
+  - NUMBER
+  - {t: SPACE, h: Fn}
+  - {t: ENTER, h: Fn}
+  - SYMBOL
+  - RALT
+  NUMBER:
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '&mmv MOVE_UP'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BSPC
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - '&mmv MOVE_LEFT'
+  - '&mkp LCLK'
+  - '&mmv MOVE_RIGHT'
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - HOME
+  - PG UP
+  - {t: ▽, type: trans}
+  - RGB OFF
+  - RGB ON
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB EFF
+  - MUTE
+  - '&mmv MOVE_DOWN'
+  - RGB EFR
+  - RGB SPI
+  - RGB BRI
+  - RGB BRD
+  - END
+  - PG DN
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - INS
+  - DEL
+  - {t: ▽, type: trans}
+  SYMBOL:
+  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - '&mmv MOVE_UP'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - BSPC
+  - {t: ▽, type: trans}
+  - BT CLR
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - '&mkp MB4'
+  - '&mmv MOVE_LEFT'
+  - '&mkp LCLK'
+  - '&mmv MOVE_RIGHT'
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - {t: ▽, type: trans}
+  - OUT USB
+  - OUT BLE
+  - ''
+  - ''
+  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_DOWN'
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SPACE
+  - RET
+  - {type: held}
+  - {t: ▽, type: trans}
+  Fn:
+  - '&studio_unlock'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - '&mmv MOVE_UP'
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - '&mkp MB4'
+  - '&mmv MOVE_LEFT'
+  - '&mkp LCLK'
+  - '&mmv MOVE_RIGHT'
+  - '&bootloader'
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
+  - PRINTSCREEN
+  - F12
+  - {t: ▽, type: trans}
+  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - '&mkp MB5'
+  - MUTE
+  - '&mmv MOVE_DOWN'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - '&sys_reset'
+  - SCROLLLOCK
+  - PAUSE BREAK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [1, 15, 29]
+  k: '&soft_off'
