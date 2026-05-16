@@ -1,7 +1,54 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  Base: ['&esc_tab', Q, W, E, R, T, UP, Y, U, I, O, P, BSPC, LCTRL, A, S, D, F, G, LEFT, ENTER, RIGHT, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, SPACE, DOWN, N,
-    M, ',', ., /, RSHFT, LALT, LGUI, SPACE, RET, Lower, Raise]
+  Base:
+  - {t: ESC, h: TAB}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - UP
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - LCTRL
+  - A
+  - S
+  - D
+  - F
+  - G
+  - LEFT
+  - ENTER
+  - RIGHT
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - SPACE
+  - DOWN
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - LALT
+  - LGUI
+  - SPACE
+  - RET
+  - Lower
+  - Raise
   Lower:
   - {t: ▽, type: trans}
   - '1'
