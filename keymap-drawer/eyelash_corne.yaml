@@ -47,9 +47,9 @@ layers:
   - LGUI
   - SPACE
   - RET
-  - Lower
-  - Raise
-  Lower:
+  - Num
+  - Nav
+  Num:
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -64,26 +64,12 @@ layers:
   - '0'
   - '`'
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '~'
-  - {t: ▽, type: trans}
   - '`'
   - '~'
   - '|'
   - '='
   - +
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
@@ -93,12 +79,26 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '-'
+  - _
+  - ':'
+  - '"'
+  - '?'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - <
+  - '>'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  Raise:
+  Nav:
   - F1
   - F2
   - F3
