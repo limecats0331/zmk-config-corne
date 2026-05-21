@@ -97,7 +97,7 @@
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5                                         &trans                       &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp GRAVE
 &trans  &kp GRAVE  &kp TILDE  &kp PIPE   &kp EQUAL  &kp PLUS                        &trans        &trans       &trans        &kp LBKT   &kp RBKT  &kp LBRC   &kp RBRC  &kp BSLH   &trans
-&trans  &kp MINUS  &kp UNDER  &kp COLON  &kp DQT    &kp QMARK   &trans                    &trans                       &kp LT     &kp GT    &trans     &trans    &trans    &trans
+&trans  &trans     &trans     &trans     &trans     &trans      &trans                    &trans                       &kp MINUS  &trans    &trans     &trans    &trans    &trans
                                       &trans    &trans     &trans                                                                   &trans     &trans    &trans
             >;
 
