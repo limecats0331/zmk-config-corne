@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   Base:
-  - TAB
+  - {t: TAB, h: ESC}
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - BSPC
-  - {t: ESC, h: LCTRL}
+  - LCTRL
   - A
   - S
   - D
@@ -41,9 +41,9 @@ layers:
   - LGUI
   - SPACE
   - RET
-  - Raise
-  - Lower
-  Lower:
+  - Num
+  - Nav
+  Num:
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -56,18 +56,6 @@ layers:
   - '9'
   - '0'
   - '`'
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '~'
   - {t: ▽, type: trans}
   - '`'
   - '~'
@@ -85,8 +73,20 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  Raise:
+  - {t: ▽, type: trans}
+  Nav:
   - F1
   - F2
   - F3
@@ -127,8 +127,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   Adjust:
   - BT CLR
   - {t: BT, h: '0'}
