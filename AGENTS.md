@@ -2,6 +2,21 @@
 
 Last verified: 2026-05-16
 
+## Keymap Editing Rule
+
+When changing the C black keymap, update both files together:
+
+```text
+config/eyelash_corne.keymap
+config/corne.keymap
+```
+
+`config/eyelash_corne.keymap` is the firmware source used by the Eyelash Corne
+C black builds. `config/corne.keymap` is kept in sync so keymap editor and
+drawer views that default to the standard Corne file show the same logical
+layout. Do not change only one of these files for layer names, Base keys, Num
+symbols, Nav keys, or thumb layer order.
+
 This repository is for an AliExpress Eyelash Peripherals style Corne C black
 keyboard, not a standard foostan Corne. The working target is the seller/custom
 Eyelash Corne configuration.
@@ -177,4 +192,3 @@ include:
     shield: settings_reset
     artifact-name: c_black_reset_right
 ```
-

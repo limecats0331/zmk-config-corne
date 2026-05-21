@@ -22,41 +22,52 @@
 };
 
 / {
+    behaviors {
+        esc_tab: esc_tab {
+            compatible = "zmk,behavior-hold-tap";
+            display-name = "Esc/Tab";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
             display-name = "Base";
             // ---------------------------------------------------------------------------------------------
-            // |  TAB    |  Q  |  W  |  E  |  R  |  T  |       |  Y  |  U  |  I  |  O  |  P  |  BSPC  |
-            // | CTL/ESC |  A  |  S  |  D  |  F  |  G  |       |  H  |  J  |  K  |  L  |  ;  |   '    |
+            // | TAB/ESC |  Q  |  W  |  E  |  R  |  T  |       |  Y  |  U  |  I  |  O  |  P  |  BSPC  |
+            // |  LCTRL  |  A  |  S  |  D  |  F  |  G  |       |  H  |  J  |  K  |  L  |  ;  |   '    |
             // |  LSHFT  |  Z  |  X  |  C  |  V  |  B  |       |  N  |  M  |  ,  |  .  |  /  |  RSHFT |
-            //                       | LALT | LGUI | SPACE |       | ENTER | mo 2 | mo 1 |
+            //                       | LALT | LGUI | SPACE |       | ENTER | mo 1 | mo 2 |
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E     &kp R     &kp T            &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LCTRL ESC  &kp A  &kp S  &kp D     &kp F     &kp G            &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp V     &kp B            &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                             &kp LALT  &kp LGUI  &kp SPACE        &kp RET  &mo 2  &mo 1
+&esc_tab ESC TAB  &kp Q  &kp W  &kp E     &kp R     &kp T            &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL         &kp A  &kp S  &kp D     &kp F     &kp G            &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C     &kp V     &kp B            &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                &kp LALT  &kp LGUI  &kp SPACE        &kp RET  &mo 1  &mo 2
             >;
         };
 
         lower_layer {
-            display-name = "Lower";
+            display-name = "Num";
             // ---------------------------------------------------------------------------------------------
             // | trans |  1  |  2  |  3  |  4  |  5  |       |  6  |  7  |  8  |  9  |  0  |  `    |
-            // | trans |  !  |  @  |  #  |  $  |  %  |       |  ^  |  &  |  *  |  (  |  )  |  ~    |
             // | trans |  `  |  ~  |  |  |  =  |  +  |       |  [  |  ]  |  {  |  }  |  \  | trans |
+            // | trans | ___ | ___ | ___ | ___ | ___ |       | ___ |  -  | ___ | ___ | ___ | trans |
             //                     | trans | trans | trans |       | trans | trans | trans |
             bindings = <
 &trans  &kp N1     &kp N2     &kp N3    &kp N4     &kp N5         &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp GRAVE
-&trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp TILDE
 &trans  &kp GRAVE  &kp TILDE  &kp PIPE  &kp EQUAL  &kp PLUS       &kp LBKT   &kp RBKT  &kp LBRC   &kp RBRC  &kp BSLH  &trans
+&trans  &trans     &trans     &trans    &trans     &trans         &trans     &kp MINUS &trans     &trans    &trans    &trans
                               &trans    &trans     &trans         &trans     &trans    &trans
             >;
         };
 
         raise_layer {
-            display-name = "Raise";
+            display-name = "Nav";
             // ---------------------------------------------------------------------------------------------
             // |  F1   |  F2   |  F3   |  F4   |  F5   |  F6   |       |  F7   |  F8   |  F9   | F10   | F11    | F12    |
             // | trans | trans | trans | trans | trans | trans |       | trans | trans | trans | trans |   UP   | trans  |
