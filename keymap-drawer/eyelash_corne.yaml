@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   Base:
-  - {t: ESC, h: TAB}
+  - {t: TAB, h: ESC}
   - Q
   - W
   - E
@@ -86,8 +86,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '-'
   - {t: ▽, type: trans}
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
